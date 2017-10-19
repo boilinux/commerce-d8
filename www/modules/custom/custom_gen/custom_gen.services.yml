@@ -1,0 +1,7 @@
+services:
+  custom_gen.twig.extension:
+    class: Drupal\custom_gen\TwigExtension\DefaultTwigExtension
+    arguments: ['@renderer']
+    tags:
+      - { name: twig.extension }
+

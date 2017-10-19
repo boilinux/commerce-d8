@@ -1,0 +1,14 @@
+{
+  "name": "drupal/custom_gen",
+  "type": "drupal-module",
+  "description": "Custom General",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/custom_gen",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/custom_gen",
+    "source": "http://cgit.drupalcode.org/custom_gen"
+  },
+  "require": { }
+}
