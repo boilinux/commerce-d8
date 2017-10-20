@@ -2,11 +2,11 @@
 	$(document).ready(function($) {
 		var registerpage = $('body.login form#user-register-form');
 
-		if (!$('form#add-loan-form').length) {
-			$('div.form-item').each(function() {
-				$(this).find('input').attr('placeholder', $(this).find('label').text());
-			});
-		}
+		// if (!$('form#add-loan-form').length) {
+		// 	$('div.form-item').each(function() {
+		// 		$(this).find('input').attr('placeholder', $(this).find('label').text());
+		// 	});
+		// }
 
 		$('form div.form-actions button').addClass('btn btn-success uppercase');
 
@@ -38,6 +38,11 @@
       };
 
 			toastr[custom_msg.attr('data-notice')](custom_msg.text(), "System message");
+		}
+		if ($('.form-actions a').length) {
+			$('.form-actions a').each(function() {
+				$(this).addClass('btn blue');
+			});
 		}
 	});
 })(jQuery);
