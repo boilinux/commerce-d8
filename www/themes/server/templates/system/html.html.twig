@@ -52,7 +52,6 @@
     db_offline ? 'db-offline',
     theme.settings.navbar_position ? 'navbar-is-' ~ theme.settings.navbar_position,
     theme.has_glyphicons ? 'has-glyphicons',
-    not logged_in ? 'login',
   ]
 %}
 <!DOCTYPE html>
@@ -87,7 +86,7 @@
           $(document).ready(function() {
             Metronic.init(); // init metronic core componets
             Layout.init(); // init layout
-            Demo.init(); // init demo(theme settings page)
+            // Demo.init(); // init demo(theme settings page)
             QuickSidebar.init(); // init quick sidebar
             Tasks.initDashboardWidget(); // init tash dashboard widget
             UIToastr.init();

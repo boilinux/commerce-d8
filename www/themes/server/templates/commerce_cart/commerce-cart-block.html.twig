@@ -1,0 +1,22 @@
+<div{{ attributes}}>
+  <div class="cart-block--summary">
+    <a class="cart-block--link__expand" href="{{ url }}">
+      <span class="cart-block--summary__icon"><div><i class="fa fa-shopping-cart"></i></div></span>
+      <span class="cart-block--summary__count">{{ count_text }}</span>
+    </a>
+  </div>
+  {% if content %}
+  <div class="cart-block--contents">
+    <ul class="dropdown-menu dropdown-menu-default" style="display: block;">
+      <li>
+        {{ content }}
+      </li>
+      <li class="divider">
+      </li>
+      <li>
+        {{ links }}
+      </li>
+    </ul>
+  </div>
+  {% endif %}
+</div>
