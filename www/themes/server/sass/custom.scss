@@ -10,12 +10,6 @@ body.user-logged-in {
 			}
 		}
 	}
-
-	#archives {
-		div.panel-body {
-			padding: 15px 0 0 0;
-		}
-	}
 }
 
 body.path-frontpage {
@@ -44,7 +38,7 @@ body.login  {
 
 		div.form-item {
 			label {
-				display: none;
+				/*display: none;*/
 			}
 		}
 
@@ -54,10 +48,6 @@ body.login  {
 				width: 100%;
 			}
 		}
-	}
-
-	ul.nav-tabs {
-		display: none;
 	}
 }
 
@@ -94,4 +84,129 @@ form.user-form {
 	width: 100%;
 	background: #fff;
 	padding: 0 0 0 110px;
+}
+
+/* Ecommerce Override */
+body {
+	background-color: #3b434c !important;
+
+	h1,h2,h3 {
+		margin-top: 0px;
+	}
+	.panel-default {
+		border-color: #60aee4;
+	}
+	/* table */
+	table.table {
+		border: 1px solid #ddd;
+		thead {
+			tr {
+				th {
+					background-color: #eee !important;
+					font-size: 14px;
+					font-weight: 600;
+				}
+				th,td {
+					vertical-align: middle;
+				}
+			}
+		}
+		tbody {
+			tr {
+				th,td {
+					vertical-align: middle;
+				}
+			}
+		}
+	}
+
+	/* label */
+	.label {
+		color: #000;
+	}
+	.left_menu {
+		float: left;
+		margin-top: 5px;
+		margin-right: 5px;
+	}
+	.right_menu {
+		float: right;
+	}
+	/* checkboxes */
+	/*.checkbox {
+		input[type="checkbox"] {
+			position: relative;
+			margin-left: 0px;
+			top: 2px;
+		}
+		input[type="checkbox"].form-checkbox {
+			position: relative;
+			margin-left: 0px;
+			top: 2px;
+		}
+	} 
+	.checkbox-inline input[type="checkbox"], 
+	.radio input[type="radio"], 
+	.radio-inline input[type="radio"] {
+		position: relative;
+		margin-left: 0px;
+		top: 2px;
+	}*/
+
+
+	/* tabs */
+	.nav-tabs {
+		li {
+			a {
+				margin-right: 0px;
+			}
+		}
+	}
+
+	/* panel */
+	.panel-default > {
+		border-color: #60aee4;
+
+		.panel-heading {
+			color: #fff;
+			background-color: #3598dc;
+			border-color: #60aee4;
+		}
+	}
+
+	/* form action button link */
+	.form-actions {
+		a {
+
+		}
+	}
+	.input-group-addon {
+		display: none;
+	}
+
+	/* cart block */
+	.cart--cart-block {
+		a.cart-block--link__expand {
+			text-decoration: none;
+
+			i.fa-shopping-cart {
+				font-size: 32px;
+			}
+		}
+		.cart-block {
+			.view-content {
+				table {
+					margin-bottom: 0px;
+					border: none;
+
+					tr {
+						td {
+							background-color: #fff;
+							border: none;
+						}
+					}
+				}
+			}
+		}
+	}
 }
