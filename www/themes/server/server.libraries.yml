@@ -4,7 +4,7 @@ metronic-styling:
       assets/global/plugins/font-awesome/css/font-awesome.min.css: {}
       assets/global/plugins/simple-line-icons/simple-line-icons.min.css: {}
       assets/global/plugins/bootstrap/css/bootstrap.min.css: {}
-      assets/global/plugins/uniform/css/uniform.default.css: {}
+      # assets/global/plugins/uniform/css/uniform.default.css: {}
       assets/global/plugins/bootstrap-toastr/toastr.min.css: {}
       assets/global/plugins/morris/morris.css: {}
       assets/admin/pages/css/tasks.css: {}
@@ -48,7 +48,7 @@ metronic-scripts:
     assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js: {}
     assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js: {}
     assets/global/plugins/jquery.blockui.min.js: {}
-    assets/global/plugins/uniform/jquery.uniform.min.js: {}
+    # assets/global/plugins/uniform/jquery.uniform.min.js: {}
     assets/global/plugins/jquery.cokie.min.js: {}
     assets/global/plugins/jquery-validation/js/jquery.validate.min.js: {}
     assets/global/plugins/morris/morris.min.js: {}
