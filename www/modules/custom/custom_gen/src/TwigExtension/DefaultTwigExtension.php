@@ -45,6 +45,8 @@ class DefaultTwigExtension extends \Twig_Extension {
       return [
         new \Twig_SimpleFunction('custom_gen_logo', [$this, 'custom_gen_logo']),
         new \Twig_SimpleFunction('custom_gen_menu', [$this, 'custom_gen_menu']),
+        new \Twig_SimpleFunction('custom_gen_username', [$this, 'custom_gen_username']),
+        new \Twig_SimpleFunction('custom_gen_uid', [$this, 'custom_gen_uid']),
       ];
     }
 
@@ -98,5 +100,17 @@ class DefaultTwigExtension extends \Twig_Extension {
     $menu['#attributes']['class'] = 'menu navbar-nav ' . $menu_name;
 
     return array('#markup' => drupal_render($menu));
+  }
+
+  public function custom_gen_username() {
+    $uid = \Drupal::currentUser()->id();
+
+    $username = \Drupal::database()->query("SELECT name FROM users_field_data WHERE uid = " . $uid)->fetchField();
+
+    return $username;
+  }
+
+  public function custom_gen_uid() {
+    return \Drupal::currentUser()->id();
   }
 }
